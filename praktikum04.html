@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgb(255, 255, 255);
+            }
+
+             li{
+                  float: left;
+            }
+
+            li a{
+                display: block;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover{
+                background-color: rgb(201, 201, 201);
+            }
+
+            .row::after{
+                content: "";
+                clear: both;
+                display: block;
+            }
+
+            .col-1{width: 8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width: 58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 83,33%;}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+            
+            @media only screen and (max-width: 768px){
+                [class*="col-"]{
+                    width: 100%;
+                }
+            }
+
+            .aside {
+                background-color:white;
+                padding: 15px;
+                color: black;
+                font-size: 15px;
+                right: 0;
+                top: 0;
+            }
+
+            html{
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: #dddddd;">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#category">Category</a></li>
+            <li><a href="#cart">Cart</a></li>
+        </ul>
+
+        <div class="col-3">
+            <div style="float:left">
+                <img src="hp.jpg" alt="realme narzon 50i" height="300" width="300">
+            </div>
+        </div>
+
+        <div class="content">
+                <div class="col-6">
+                <h2>HP realme narzo 50i 4/64GB [Octa-core Processor, 6.5" Mini-drop Fullscreen, 5000mAh Massive Battery]</h2>
+                <h2>Rp1.499.000</h2>
+                <li>Powerful Octa-core Processor</li>
+                <li>5000 mAh Massive Battery</li>
+                <li>16.5cm (6.5”) Large Display</li>
+                <li>4+64 GB Large Storage</li>
+                <li>8MP AI Camera</li>
+                <li>3-Card Slot</li>
+                <li>Diagonal Stripe Design</li>
+                <li>Ultra Saving Mode</li>
+                <li>Up to 256GB External Memory</li>
+            </div>
+        </div>
+
+        
+    </body>
+</html>
